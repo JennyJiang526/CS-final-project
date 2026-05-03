@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{float}
+
+\captionsetup{
+  font=small,
+  labelfont=bf
+}
+
+\title{Accuracy and Hallucination Results}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+\centering
+\caption{Accuracy results on objective QA datasets. MedQA-US is a multiple-choice benchmark, and PubMedQA is a yes/no/maybe benchmark.}
+\label{tab:objective_accuracy}
+\begin{threeparttable}
+\small
+\setlength{\tabcolsep}{9pt}
+\begin{tabular}{lccccc}
+\toprule
+Dataset & Baseline & CoT & Meta & MedRAG (fixed-k) & MedRAG (adaptive-k) \\
+\midrule
+MedQA-US & 0.8174 & \textbf{0.8783} & 0.7609 & 0.8174 & 0.8174 \\
+PubMedQA & 0.2240 & 0.2520 & 0.2240 & \textbf{0.6400} & \textbf{0.6400} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Objective QA datasets are evaluated using exact-match accuracy.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{BERTScore F1 results on subjective QA datasets. BioASQ consists of factoid questions, and MediQA contains candidate-set style subjective responses.}
+\label{tab:subjective_accuracy}
+\begin{threeparttable}
+\small
+\setlength{\tabcolsep}{9pt}
+\begin{tabular}{lccccc}
+\toprule
+Dataset & Baseline & CoT & Meta & MedRAG (fixed-k) & MedRAG (adaptive-k) \\
+\midrule
+BioASQ & 0.8480 & 0.7846 & 0.8227 & 0.9049 & \textbf{0.9070} \\
+MediQA & \textbf{0.8373} & 0.8203 & 0.8312 & 0.8344 & 0.8345 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Subjective QA datasets are evaluated using BERTScore F1.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Hallucination rates across datasets and conditions.}
+\label{tab:hallucination}
+\begin{threeparttable}
+\small
+\setlength{\tabcolsep}{9pt}
+\begin{tabular}{lccccc}
+\toprule
+Dataset & Baseline & CoT & Meta & MedRAG (fixed-k) & MedRAG (adaptive-k) \\
+\midrule
+BioASQ   & 0.0882 & \textbf{0.0147} & 0.0882 & 0.0588 & 0.0809 \\
+MedQA-US & 0.1680 & \textbf{0.0960} & 0.1720 & 0.1720 & 0.1800 \\
+MediQA   & 0.0240 & \textbf{0.0080} & 0.0200 & 0.0480 & 0.0600 \\
+PubMedQA & 0.4200 & 0.2040 & 0.4200 & 0.1880 & \textbf{0.1760} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Lower hallucination rate indicates fewer hallucinated responses.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{document}tabe

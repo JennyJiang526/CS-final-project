@@ -1,0 +1,332 @@
+{
+  "baseline": {
+    "accuracy": {
+      "MedQA-US": {
+        "correct": 188,
+        "total": 230,
+        "accuracy": 0.8174
+      },
+      "PubMedQA": {
+        "correct": 56,
+        "total": 250,
+        "accuracy": 0.224
+      }
+    },
+    "refusal_rate": {
+      "MediQA": {
+        "refusals": 9,
+        "total": 250,
+        "refusal_rate": 0.036
+      },
+      "BioASQ": {
+        "refusals": 0,
+        "total": 136,
+        "refusal_rate": 0.0
+      },
+      "MedQA-US": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "PubMedQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      }
+    },
+    "unsupported_ratio": {
+      "MediQA": {
+        "unsupported": 594,
+        "total_sentences": 651,
+        "unsupported_ratio": 0.9124,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "BioASQ": {
+        "unsupported": 65,
+        "total_sentences": 116,
+        "unsupported_ratio": 0.5603,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "MedQA-US": {
+        "unsupported": 81,
+        "total_sentences": 88,
+        "unsupported_ratio": 0.9205,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "PubMedQA": {
+        "unsupported": 58,
+        "total_sentences": 198,
+        "unsupported_ratio": 0.2929,
+        "note": "sampled 100 records, threshold=0.85"
+      }
+    }
+  },
+  "cot": {
+    "accuracy": {
+      "MedQA-US": {
+        "correct": 202,
+        "total": 230,
+        "accuracy": 0.8783
+      },
+      "PubMedQA": {
+        "correct": 63,
+        "total": 250,
+        "accuracy": 0.252
+      }
+    },
+    "refusal_rate": {
+      "MediQA": {
+        "refusals": 8,
+        "total": 250,
+        "refusal_rate": 0.032
+      },
+      "BioASQ": {
+        "refusals": 0,
+        "total": 136,
+        "refusal_rate": 0.0
+      },
+      "MedQA-US": {
+        "refusals": 1,
+        "total": 250,
+        "refusal_rate": 0.004
+      },
+      "PubMedQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      }
+    },
+    "unsupported_ratio": {
+      "MediQA": {
+        "unsupported": 2012,
+        "total_sentences": 2105,
+        "unsupported_ratio": 0.9558,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "BioASQ": {
+        "unsupported": 1175,
+        "total_sentences": 1404,
+        "unsupported_ratio": 0.8369,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "MedQA-US": {
+        "unsupported": 1205,
+        "total_sentences": 1281,
+        "unsupported_ratio": 0.9407,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "PubMedQA": {
+        "unsupported": 308,
+        "total_sentences": 791,
+        "unsupported_ratio": 0.3894,
+        "note": "sampled 100 records, threshold=0.85"
+      }
+    }
+  },
+  "meta": {
+    "accuracy": {
+      "MedQA-US": {
+        "correct": 175,
+        "total": 230,
+        "accuracy": 0.7609
+      },
+      "PubMedQA": {
+        "correct": 56,
+        "total": 250,
+        "accuracy": 0.224
+      }
+    },
+    "refusal_rate": {
+      "MediQA": {
+        "refusals": 20,
+        "total": 250,
+        "refusal_rate": 0.08
+      },
+      "BioASQ": {
+        "refusals": 0,
+        "total": 136,
+        "refusal_rate": 0.0
+      },
+      "MedQA-US": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "PubMedQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      }
+    },
+    "unsupported_ratio": {
+      "MediQA": {
+        "unsupported": 1371,
+        "total_sentences": 1464,
+        "unsupported_ratio": 0.9365,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "BioASQ": {
+        "unsupported": 250,
+        "total_sentences": 324,
+        "unsupported_ratio": 0.7716,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "MedQA-US": {
+        "unsupported": 118,
+        "total_sentences": 126,
+        "unsupported_ratio": 0.9365,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "PubMedQA": {
+        "unsupported": 42,
+        "total_sentences": 144,
+        "unsupported_ratio": 0.2917,
+        "note": "sampled 100 records, threshold=0.85"
+      }
+    }
+  },
+  "medrag": {
+    "accuracy": {
+      "MedQA-US": {
+        "correct": 188,
+        "total": 230,
+        "accuracy": 0.8174
+      },
+      "PubMedQA": {
+        "correct": 160,
+        "total": 250,
+        "accuracy": 0.64
+      }
+    },
+    "refusal_rate": {
+      "MediQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "BioASQ": {
+        "refusals": 0,
+        "total": 136,
+        "refusal_rate": 0.0
+      },
+      "MedQA-US": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "PubMedQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      }
+    },
+    "citation_coverage": {
+      "MediQA": {
+        "covered": 992,
+        "total_sentences": 1007,
+        "coverage": 0.9851
+      },
+      "BioASQ": {
+        "covered": 531,
+        "total_sentences": 531,
+        "coverage": 1.0
+      },
+      "MedQA-US": {
+        "covered": 694,
+        "total_sentences": 778,
+        "coverage": 0.892
+      },
+      "PubMedQA": {
+        "covered": 1102,
+        "total_sentences": 1102,
+        "coverage": 1.0
+      }
+    },
+    "unsupported_ratio": {
+      "MediQA": {
+        "unsupported": 104,
+        "total_sentences": 120,
+        "unsupported_ratio": 0.8667,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "BioASQ": {
+        "unsupported": 25,
+        "total_sentences": 69,
+        "unsupported_ratio": 0.3623,
+        "note": "sampled 100 records, threshold=0.85"
+      }
+    }
+  },
+  "medrag_fixed_k": {
+    "accuracy": {
+      "MedQA-US": {
+        "correct": 188,
+        "total": 230,
+        "accuracy": 0.8174
+      },
+      "PubMedQA": {
+        "correct": 160,
+        "total": 250,
+        "accuracy": 0.64
+      }
+    },
+    "refusal_rate": {
+      "MediQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "BioASQ": {
+        "refusals": 0,
+        "total": 136,
+        "refusal_rate": 0.0
+      },
+      "MedQA-US": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      },
+      "PubMedQA": {
+        "refusals": 0,
+        "total": 250,
+        "refusal_rate": 0.0
+      }
+    },
+    "citation_coverage": {
+      "MediQA": {
+        "covered": 1052,
+        "total_sentences": 1065,
+        "coverage": 0.9878
+      },
+      "BioASQ": {
+        "covered": 497,
+        "total_sentences": 498,
+        "coverage": 0.998
+      },
+      "MedQA-US": {
+        "covered": 693,
+        "total_sentences": 776,
+        "coverage": 0.893
+      },
+      "PubMedQA": {
+        "covered": 1090,
+        "total_sentences": 1090,
+        "coverage": 1.0
+      }
+    },
+    "unsupported_ratio": {
+      "MediQA": {
+        "unsupported": 104,
+        "total_sentences": 123,
+        "unsupported_ratio": 0.8455,
+        "note": "sampled 100 records, threshold=0.85"
+      },
+      "BioASQ": {
+        "unsupported": 23,
+        "total_sentences": 70,
+        "unsupported_ratio": 0.3286,
+        "note": "sampled 100 records, threshold=0.85"
+      }
+    }
+  }
+}
